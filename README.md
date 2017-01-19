@@ -234,15 +234,15 @@ inline 요소가 개행하지 못하게 한다. 부모 요소보다 커져도 �
 
 ##### 예제
 그림자를 이용한 테두리 만들기
-`text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;`
-적용 전
-![shadow-non-border]()
-적용 후
-![shadow-border]()
+`text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;`  
+적용 전  
+![shadow-non-border](./images/readme-images/shadow-non-border.png)  
+적용 후  
+![shadow-border](./images/readme-images/shadow-border.png)
 
  그림자를 중복하여 두꺼운 그림자 만들기
-`text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000;`
-![thick-shadow]()
+`text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000;`  
+![thick-shadow](./images/readme-images/thick-shadow.png)
 
 
 #### 참고
@@ -256,8 +256,10 @@ CSS의 `border-radius` 속성에는 둥근외곽선(rounded border)를 표현하
 ##### 구문
 `  border-bottom-left-radius: 반지름 크기px;`
 값이 클수록 완만한 곡선
-값이 작으면 날카로운 곡선
-![border-radius]()
+값이 작으면 날카로운 곡선  
+
+![border-radius](./images/readme-images/border-radius.png) 
+
 ##### 단축속성(shorthand)
 * `border-top-left-radius`(왼쪽 상단 모서리)
 * `border-top-right-radius`(오른쪽 상단 모서리)
