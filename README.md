@@ -258,9 +258,6 @@ CSS의 `border-radius` 속성에는 둥근외곽선(rounded border)를 표현하
 
 ##### 구문
 `  border-bottom-left-radius: 반지름 크기px;`
-값이 클수록 완만한 곡선
-값이 작으면 날카로운 곡선
-
 
 ##### 단축속성(shorthand)
 * `border-top-left-radius`(왼쪽 상단 모서리)
