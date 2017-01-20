@@ -235,11 +235,11 @@ inline 요소가 개행하지 못하게 한다. 부모 요소보다 커져도 �
 ##### 예제
 그림자를 이용한 테두리 만들기
 `text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000;`  
-적용 전  
-![shadow-non-border](https://cloud.githubusercontent.com/assets/13896252/22130962/07d2534a-def3-11e6-806a-d87e693c22b3.png) 
-적용 후  
-![shadow-border](https://cloud.githubusercontent.com/assets/13896252/22130959/07cd8982-def3-11e6-95a1-e447f17a3828.png)
 
+적용 전  
+![shadow-non-border](https://cloud.githubusercontent.com/assets/13896252/22130962/07d2534a-def3-11e6-806a-d87e693c22b3.png)   
+적용 후    
+![shadow-border](https://cloud.githubusercontent.com/assets/13896252/22130959/07cd8982-def3-11e6-95a1-e447f17a3828.png)  
  그림자를 중복하여 두꺼운 그림자 만들기
 `text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000;`  
 ![thick-shadow](https://cloud.githubusercontent.com/assets/13896252/22130961/07d027c8-def3-11e6-80c4-e672c2782fba.png)
@@ -252,9 +252,10 @@ inline 요소가 개행하지 못하게 한다. 부모 요소보다 커져도 �
 
 ### border-radius
 ##### 요약
-CSS의 `border-radius` 속성에는 둥근외곽선(rounded border)를 표현하는 방법이 정의되어 있다. 하나 혹은 두개의 반지름을 설정하여 각각 모서리의 굴곡을 설정할 수 있기 때문에, 원 혹은 타원의 모양으로 정의가 가능하다.
+CSS의 `border-radius` 속성에는 둥근외곽선(rounded border)를 표현하는 방법이 정의되어 있다. 하나 혹은 두개의 반지름을 설정하여 각각 모서리의 굴곡을 설정할 수 있기 때문에, 원 혹은 타원의 모양으로 정의가 가능하다.  
 
-![border-radius](https://cloud.githubusercontent.com/assets/13896252/22130960/07ce937c-def3-11e6-8527-67e8e0182b2f.png)
+![border-radius](https://cloud.githubusercontent.com/assets/13896252/22130960/07ce937c-def3-11e6-8527-67e8e0182b2f.png)  
+
 
 ##### 구문
 `  border-bottom-left-radius: 반지름 크기px;`
