@@ -109,7 +109,8 @@ p {color: red};
 * `animation-delay:` 애니메이션이 시작하기 전 지연시간
 * `animation-iteration-count:` 반복 횟수
 * `animation-direction:` 루프 (loop) 방향. 정방향으로 반복, 역방향으로 반복, 번갈아가며 반복 등을 설정
-* `animation-fill-mode:` 애니메이션 시작/끝 상태 제어 ( none | forwards | backwards | both )
+* `animation-fill-mode:` 애니메이션 시작/끝 상태 제어 ( none | forwards | backwards | both )  
+
 ##### 예제
 
 offset 사용
@@ -230,7 +231,7 @@ inline 요소가 개행하지 못하게 한다. 부모 요소보다 커져도 �
 ##### 속성
 * **x** : 수평 그림자의 offset 값으로 반드시 필요하다.
 * **y** : 수직 그림자의 offset 값으로 반드시 필요하다.
-* **blur** : 그림자 가장자리를 부드럽게 처리하는 정도를 나타나매 선택적 값이다. 0이면 가장 날카롭게 처리한다.
+* **blur** : 그림자 가장자리를 부드럽게 처리하는 정도를 나타나매 선택적 값이다. 0이면 가장 날카롭게 처리한다.  
 
 ##### 예제
 그림자를 이용한 테두리 만들기
