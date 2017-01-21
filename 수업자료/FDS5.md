@@ -1,70 +1,80 @@
-5일차
+**Front-end School 3**
+# Day5
 
-- 애니메이션
+## Index
+1. CSS개념
+    * [Multiple Backgrounds](#multiplebackgrounds)
+    * [Fallback Color](#fallbackcolor)
+2. 기타
+    * [조은님 html-best-practices 번역](#조은님html-best-practices번역)
+    * [효율적인 CSS 작성](#효율적인CSS작성)
+    * [입력서식 markup 예시](#입력서식markup예시)
+    * [CSS 속성을 눈으로 보자!](#CSS속성을눈으로보자!)
+    * [유효성 검사](#유효성검사)  
 
-keyframes로 각 구간 별 구현한 애니메이션 선언 후 
+---
+## 1. CSS개념
+### Multiple Backgrounds
+**데레사쌤 tip**: 이미지명은 하이픈(-)으로 적용할 경우 더 빠르게 인식한다.
 
-구현 할 곳에서 name,duration 속성으로 호출한 후 사용한다. 
+* 이미지들은 콤마(,)로 구분한다.
+* 이미지들은 각각의 위에 쌓인다.
+* 처음 선언된 이미지가 가장 위에 온다.  
 
-다중 호출 가능 `div{animation-name: main-ani, sub-ani;}`
 
-콤마(,)는 두 개 이상의 애니메이션을 동시에 적용할 때 사용.
 
-연습 사이트: http://www.the-art-of-web.com/css/timing-function/
+**예제**
+```css
+#example1 {
+    background-image: url(img_flwr.gif), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+}
+```    
 
-fill-mode: 애니 처음(backwards) / 끝(forwards)에서 머물게 하는 속성
+**참고**  
+1. [w3school](http://www.w3schools.com/css/css3_backgrounds.asp)  
+2. [MDN](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Background_and_Borders/Using_CSS_multiple_backgrounds)
 
-name,duration외엔 적는 순서 상관없다.
 
-visual 자식요소로 가상요소를 만들면 아래와 같이 span태그와 같은 위치에 생긴다.
+### Fallback Color    
+`color`값을 지정하는 3가지 기본방법   
+- hexadecimal format (`#00000`  or `#000`)
+- named color (`red`)
+- `rgb()`  
+
+CSS3에서는 몇가지 색상 format이 더 추가되었다.
+- `rgba()`
+- `hsl()`
+- `hsla()` 
+
+새로운 포맷의 추가로 더 많은 색상의 표현이 가능해졌지만 오래된 익스플로러8버전 이전의 브라우저들은 추가된 format을 이해하지 못하고 color속성을 무시해버린다.    
+이 문제에 대한 해결방법이 Fallback Color를 지정해주는 것이다.  
 
 ```css
-    <div class="visual">
-      <span class="before"></span>
-      <div class="visual-text">
-        Web Standards &amp; Accessibility
-      </div>
-      <span class="after"></span>
-    </div>
-```
+.box {
+    background: #000;
+    color: blue;
+    color: rgba(100, 100, 200, 0.5);
+}
+```   
+오래된 브라우저가 rgba 포맷을 이해하지 못해 무시할 경우 `background: #000;` 색상을 대체해서 보여준다.    
 
+**참고**  
+1. [CSSLint](https://github.com/CSSLint/csslint/wiki/Require-fallback-colors) 
 
-
-- 이미지명은 하이픈으로 적용할 경우 더 빠르게 인식한다.
-
-- 멀티백그라운드 콤마(,)로 구분 단축표현은 중복사용 못함, 
-
-  배경의 경우 나중에 선언한 것이 밑으로 온다.
-
-- codepen 방문: steps animation 검색 후 첫 번째 예제
-
-
-
-- 로그인 폼
-
-버튼: form에서 정한 action으로 form에 담긴 정보를 보낸다.
-
-마크업 후 tools 탭 / 파폭 35,36번 북마크에서 마크업 유효성 검사 해보기
-
-- 입력서식 마크업 예시 잘된 사이트 https://miketaylr.com/pres/html5/forms2.html
-
-
-- html pdf에 서식 list가 있음
-- 논리속성이란? 태그에 =""없이 입력하면 true / 입력 안하면 false
-
-
-
-- http://cssreference.io/ css 적용 모습을 코드작성 없이 볼 수 있음 - css속성 학습에 짱
-
-- https://github.com/techhtml/html-best-practices/blob/master/README.md 
-
-  조은님 HTML연습 
-
-- 폴백칼라:그라디언트 안보일 경우 대체랑 배경화면 
-
-  `background: #ff7512 radial-gradient(circle at right top, rgb(255, 224, 15), rgb(255, 46, 0));`
-
-  위에선 `#ff7512`가 폴백칼라
-
-  ​
-
+## 2.기타  
+1. **조은님 html-best-practices 번역**
+  - 조은님 [Github](https://github.com/techhtml/html-best-practices/blob/master/README.md)   
+2. **효율적인 CSS 작성**  
+  - [Writing Efficient CSS](https://developer.mozilla.org/ko/docs/Web/CSS/Writing_Efficient_CSS)  
+3. **입력서식 markup 예시**  
+  - [Web Forms 2.0 demo page](https://miketaylr.com/pres/html5/forms2.html)  
+4. **CSS 속성을 눈으로 보자!**  
+  - [cssreference](http://cssreference.io/)  
+5. **유효성 검사**  
+  - [w3c HTML](https://validator.w3.org/)  
+  - [w3c CSS](https://jigsaw.w3.org/css-validator/)  
+  
+---
+[Index 바로가기](#index)
