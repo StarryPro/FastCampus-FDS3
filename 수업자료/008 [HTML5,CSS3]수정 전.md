@@ -8,9 +8,10 @@
 2. [탭 메뉴 구현](#탭메뉴구현)
 3. [IR기법](#ir법)
 4. [Transition](#transition) 
-5. [box-Shadow](#box-shadow)  
-6. [sprite](#sprite)  
+5. [box-Shadow](#box-shadow)  
+6. [sprite 이미지](#sprite이미지)  
 7. [한 줄 Tip](#한줄tip)  
+
 ---
 
 ### 아침 액티비티    
@@ -65,37 +66,87 @@ $(function(){    
 
 ### Transition  
 
-   - translform: rotate(각도 )  
-   - 애니메이션과 다르게 keyframes 필요없다.  
-   - hover되는 순간 실행된다.  
+#### [공식문서](# https://www.w3.org/TR/css3-transitions/)
+#### 트랜지션(transitions)은 애니메이션의 속도를 조절할 수 있는 CSS 속성이다.
 
-**CSS**
-   ```css
-   img{
-     transform: rotate(0deg);
-     /*1초 동안 360도 회전시켜줌*/
-     transition: all 1s;
-     border: 10px solid red;
-     border-radius: 50%;
-   }
-   img:hover, img:focus{
-     transform: rotate(360deg);
-     border: 10px dashed blue;
-     border-radius: 5%;
-   }
-   ```  
-**HTML**
-   ```html
-   <body>
-     <h1>트랜지션 효과</h1>
-     <img src="images/sun.gif" alt="태양" tabindex="0">
-   </body>
-   ```  
+![transition-img](https://cloud.githubusercontent.com/assets/13896252/22286890/020e875e-e334-11e6-9a6c-9887946d04fb.png)
+
+#### 활용법
+`transition-property`
+
+트랜지션을 적용해야 하는 CSS 속성의 이름 혹은 이름들을 명시합니다. 여기에 나열한 속성만 트랜지션하는 동안 움직입니다. 또한, 다른 모든 속성에 대한 변화는 보통 때와 같이 즉시 일어납니다.
+
+`transition-duration`
+
+트랜지션이 일어나는 지속 시간을 명시합니다. 트랜지션 동안 모든 속성에 적용하는 단일 지속 시간을 명시하거나, 다른 주기로 각 속성이 트랜지션하게 하는 여러 지속 시간을 명시할 수 있습니다.
+
+`transition-delay`
+
+속성이 변한 시점과 트랜지션이 실제로 시작하는 사이에 기다리는 시간을 정의합니다.
+
+단축 문법
+```css
+div {
+    transition: <property> <duration> <timing-function> <delay>;
+}
+```
+
+#### [cssreference.io 예제](# http://cssreference.io/transitions/)
+transition을 활용한 다양한 예제가 시각적으로 잘 정리되어 있어 공부하기 좋습니다.
+
+#### 수업에서 다룬 예제
+```css
+img {
+  transform: rotate(0deg);
+  transition: transform 1s, border-radius 1s 2s;
+  background: red;
+  border: 10px solid lime;
+  width: 200px;
+  height: 200px
+}
+img:hover, img:focus {
+  transform: rotate(360deg);
+  background: blue;
+  border: 10px dashed silver;
+  border-radius: 50%;
+}
+```
+
+**참고**
+
+[MDN CSS Transition 사용하기](# https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
    
-### box-shadow  
+### box-shadow    
 
-### sprite  
- * 많은 이미지에 대한 성능이슈 해결을 위한 sprite 기법
+- IE8 이하의 브라우저를 제외한 모든 브러우저에서 지원  
+- 그래픽 프로그램을 이용하지 않고도 그림자 효과를 추가할 수 있다.  
+- CSS3의 새로운 box-shadow 속성은 4개의 값을 가지며 최소 3개 이상의 값을 유지 해야한다.  
+
+![browse](https://cloud.githubusercontent.com/assets/13896252/22287736/4cf3fe40-e337-11e6-824c-08cbf799e2c4.png)  
+
+* `box-shadow` 의 기본값 `none`
+* `box-shadow`: **X축**(1), **Y축**(2), blur-distance(3), spread-distance(4), 그림자색상(5), inset(6);
+```
+box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3);                       
+```  
+
+![box-shadow](https://cloud.githubusercontent.com/assets/13896252/22287706/22f102dc-e337-11e6-9d5d-995fa7ffe65d.png)
+
+1. **X축**: 그림자의 가로 길이 양수는 오른쪽 음수는 왼쪽(필수값)
+2. **Y축**: 그림자의 세로 길이(필수값)
+3. **blur distance**: 흐려지기 시작하는 곳과 끝 사이의 길이 값을 설정(미설정시 선명한 그림자 효과)
+4. **spread distance**: 그림자 확산 거리
+5. **그림자 색상**: 16진수 값이나 컬러 상수 값으로 세팅할 수 있음
+6. **inset**: 내부그림자 설정 
+ 
+**참고**  
+[html5around](http://html5around.com/wordpress/tutorials/css-box-shadow/)
+[mainia](http://mainia.tistory.com/3511)  
+
+### sprite 이미지       
+
+ 웹페이지를 제작할때 사용하는 아이콘,배너,버튼등을 한개의 그림파일에 넣어놓고
+ css의 background-position속성을 사용하여 해당그림을 사용하는 방식.
 
 ### 한 줄 Tip  
    * [Zen Garden](http://www.csszengarden.com/) - CSS 참고  
