@@ -9,8 +9,9 @@
 3. [IR기법](#ir법)
 4. [Transition](#transition) 
 5. [box-Shadow](#box-shadow)  
-6. [sprite 이미지](#sprite이미지)  
-7. [한 줄 Tip](#한줄tip)  
+6. [sprite 이미지](#sprite이미지)
+7. [오늘의 구조도](#오늘의구조도)
+8. [한 줄 Tip](#한줄tip)  
 
 ---
 
@@ -146,7 +147,10 @@ box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.3);
 ### sprite 이미지       
 
  웹페이지를 제작할때 사용하는 아이콘,배너,버튼등을 한개의 그림파일에 넣어놓고
- css의 background-position속성을 사용하여 해당그림을 사용하는 방식.
+ css의 background-position속성을 사용하여 해당그림을 사용하는 방식.  
+ 
+### 오늘의 구조도  
+![오늘의 구조도](https://cloud.githubusercontent.com/assets/13896252/22288255/7045cf66-e339-11e6-885c-cfae0b8c013b.png)
 
 ### 한 줄 Tip  
    * [Zen Garden](http://www.csszengarden.com/) - CSS 참고  
