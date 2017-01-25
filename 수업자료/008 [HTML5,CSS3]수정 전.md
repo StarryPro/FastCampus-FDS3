@@ -7,11 +7,13 @@
 1. [아침 액티비티](#아침액티비티)
 2. [탭 메뉴 구현](#탭메뉴구현)
 3. [IR기법](#ir법)
-4. [Transition](#transition)  
-
+4. [Transition](#transition) 
+5. [box-Shadow](#box-shadow)  
+6. [sprite](#sprite)  
+7. [한 줄 Tip](#한줄tip)  
 ---
 
-### 아침 액티비티(솔로런, 그리드 시스템)   
+### 아침 액티비티    
 
    1. [Sololearn](https://www.sololearn.com/Courses/)  
    2. 그리드 시스템이란?
@@ -58,8 +60,7 @@ $(function(){    
      left: 0;
    }
    ```  
- * 네이버 메인도 글자위에 글자이미지를 덮어씌운 것
- * 많은 이미지에 대한 성능이슈 해결을 위한 sprite 기법
+ * 네이버 메인도 글자위에 글자이미지를 덮어 씌운 것
 
 
 ### Transition  
@@ -68,7 +69,7 @@ $(function(){    
    - 애니메이션과 다르게 keyframes 필요없다.  
    - hover되는 순간 실행된다.  
 
-**CSS ***
+**CSS**
    ```css
    img{
      transform: rotate(0deg);
@@ -83,43 +84,41 @@ $(function(){    
      border-radius: 5%;
    }
    ```  
-**HTML **
+**HTML**
    ```html
    <body>
      <h1>트랜지션 효과</h1>
      <img src="images/sun.gif" alt="태양" tabindex="0">
    </body>
-   ```
+   ```  
+   
+### box-shadow  
 
-그리드 관련 사이트
+### sprite  
+ * 많은 이미지에 대한 성능이슈 해결을 위한 sprite 기법
 
-https://css-tricks.com/snippets/css/complete-guide-grid/
+### 한 줄 Tip  
+   * [Zen Garden](http://www.csszengarden.com/) - CSS 참고  
+   * 글자 강조를 위한 시맨틱 태그: 강한 강조 `<strong>`, 일반적인 강조 `<em>`  
+   * [그리드 관련 사이트css-tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)    
+   * outline 속성: `border: 1px` 는 박스의 크기에 포함되지만 outline은 포함되지 않는다.    
+   * list 생성 단축키: Ctrl + Alt + W [Windows] , Ctrl + Option + W [Mac]     
 
+**만들고자 하는 리스트 의 텍스트 입력 후**  
 
+패스트캠퍼스  
+생산성 본부  
+멀티 캠퍼스  
+웹접근성 연구소  
+W3C  
 
-글자 강조를 위한 시맨틱 태그 강한 강조<strong>, 일반적인 강조 <em>
+**단축표현 입력**  
 
-큰 의미를 가지지 않는 글자 꾸미기 -> span
+`ul.related-list>li*>a[#]`  
 
-반응형이미지 트릭: 이미지를 감싸서 부모의 크기에 따라 이미지 크기를 조절하는 것
+**완성**  
 
-
-
-**단축표현**
-
-윈도우
-
-컨트롤 + 알트 + w 
-
-맥
-
-컨트롤 + 옵션 + w
-
-```css
-ul.related-list>li*>a[#]
-```
-
-```html
+```html  
 <ul class="related-list">
   <li>패스트캠퍼스</li>
   <li>생산성 본부</li>
@@ -127,14 +126,5 @@ ul.related-list>li*>a[#]
   <li>웹접근성 연구소</li>
   <li>W3C</li>
 </ul>
-```
-
-
-outline 속성: border와 다르게 크기에 영향 x
-box-shadow
-1. Zen Garden - 에릭 마이어, 션 인멘? -> 이미지 슬라이싱해서 다시 만들어보기 
-
-   ​
-
-   ​
+```  
 
