@@ -1,0 +1,314 @@
+@charset "UTF-8";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #181818;
+}
+h1,h2{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: #181818;
+}
+a:hover{
+  color: #03a67b;
+}
+p{
+  color: #aaa;
+}
+/* headings */
+.intro-heading, .features-heading, .ipad-heading, .try-heading, .client-heading{
+  font-size: 49px;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.wrapper{
+  background: gray;
+}
+.header, .content, .footer{
+  width: 1440px;
+  margin: 0 auto;
+  background: #fff;
+}
+/* header */
+.header{
+  padding: 70px 150px 58px 150px;
+  box-sizing: border-box;
+  height: 167px;
+}
+.logo{
+  position: absolute;
+}
+.main-menu{
+  margin-left: 100px;
+}
+.main-menu li{
+  float: left;
+  margin-top: 13px;
+  font-family: 'poppins bold';
+}
+.main-menu a{
+  padding: 15px 10px;
+}
+.main-menu a:hover{
+  background: #03a67b;
+  color: #fff;
+}
+.member{
+  float: right;
+  margin-top: 13px;
+}
+.login{
+  padding: 6px 10px;
+}
+.login:hover{
+  background: #03a67b;
+  color: #fff;
+}
+.signup{
+  background: #fff;
+  border: 1px solid #03a67b;
+  border-radius: 3px;
+  padding: 5px 33px;
+  color: #03a67b;
+}
+.signup:hover{
+  background: #03a67b;
+  color: #fff;
+}
+/* section border */
+.intro, .ipad, .try, .client{
+  border-bottom: 3px solid #eee;
+}
+/* intro */
+.intro{
+  height: 660px;
+  padding: 0 150px 100px 150px;
+  position: relative;
+  box-sizing: border-box;
+}
+.intro-heading{
+  margin-top: 169px;
+  display: inline-block;
+}
+.intro-brief{
+  width: 530px;
+}
+.phone-img{
+  background: url(../images/Iphone-Mockup.png) no-repeat;
+  width: 257px;
+  height: 533px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: 298px;
+}
+.search{
+  /*input,btn 여백제거*/
+  font-size: 0;
+}
+.search input, .search button{
+  vertical-align: middle;
+}
+.search input{
+  background: #eee;
+  width: 289px;
+  height: 50px;
+  border: 0;
+  border-radius: 3px 0 0 3px;
+  padding: 20px 0 15px 24px;
+  box-sizing: border-box;
+}
+.search button{
+  background: #03a67b;
+  border: 0;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  letter-spacing: 3.5px;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+/* features */
+.features{
+  height: 564px;
+  padding: 104px 150px 93px 150px;
+  box-sizing: border-box;
+}
+.features h3{
+  /* heading hidden */
+  height: 0;
+  overflow: hidden;
+}
+.features-heading{
+  text-align: center;
+}
+.features-brief{
+  margin: 25px auto 25px auto;
+  width: 685px;
+  text-align: center;
+}
+.features-first, .features-second, .features-third{
+  display: inline-block;
+  width: 312px;
+  text-align: center;
+  padding: 0 30px;
+}
+.features figcaption{
+  font-weight: 600;
+  letter-spacing: 3.5px;
+}
+.features img{
+  padding-bottom: 15px;
+}
+
+/* ipad */
+.ipad{
+  height: 720px;
+  padding: 113px 395px 93px 395px;
+  box-sizing: border-box;
+}
+.ipad-heading{
+  text-align: center;
+}
+.ipad p{
+  width: 650px;
+  height: 0;
+  padding-top: 437px;
+  margin-top: 40px;
+  overflow: hidden;
+  background-image:url(../images/Play-Button.png),url(../images/Ipad-Mini-Mockup.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+/* try */
+.try{
+  height: 402px;
+  padding: 100px 445px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.try button{
+  border: 0;
+  width: 200px;
+  height: 50px;
+  letter-spacing: 3.5px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+.try .btn-left{
+  background: #03a67b;;
+  color: #fff;
+}
+.try .btn-right{
+  background: #fff;
+  border: 3px solid #03a67b;
+  color: #03a67b;
+}
+/* client */
+.client{
+  height: 614px;
+  text-align: center;
+  padding: 100px 150px 95px 150px;
+  box-sizing: border-box;
+}
+.client h3{
+  height: 0;
+  overflow: hidden;
+}
+.client-brief{
+  width: 685px;
+  margin: 25px auto 25px auto;
+}
+.client-first, .client-second, .client-third{
+  display: inline-block;
+  width: 281px;
+  padding: 0 30px;
+}
+.client figcaption {
+    font-weight: 600;
+    letter-spacing: 3px;
+    width: 100px;
+    margin: 20px auto 0 auto;
+}
+.client figcaption span{
+  color: rgba(8,8,8,0.3);
+  letter-spacing: normal;
+}
+/* footer */
+.footer{
+  height: 150px;
+  padding: 69px 150px 66px 150px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.footer-heading{
+  height: 0;
+  overflow: hidden;
+}
+.footer p, .footer-list{
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer p{
+  margin: 0;
+  color: #999;
+}
+.footer-list{
+  margin-left: 200px;
+}
+.footer-list li{
+  float: left;
+}
+.footer-list a{
+  padding: 0 15px;
+}
+.footer-list a:hover{
+  background: #03a67b;
+  color: #fff;
+}
+.footer-links{
+  float: right;
+}
+.footer-links a{
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  text-align: center;
+}
+.footer-links a:hover{
+  outline: 3px solid #03a67b;
+}
+.facebook{
+  background: url(../images/Facebook.png) no-repeat;
+  width: 8px;
+  padding: 17px 5px 2px 5px;
+}
+.ball{
+  background: url(../images/Dribbble.png) no-repeat;
+  width: 17px;
+  padding: 17px 5px 0 5px;
+}
+.google{
+  background: url(../images/Google-Plus.png) no-repeat;
+  width: 20px;
+  padding: 15px 5px 0 5px;
+}
+.instagram{
+  background: url(../images/Instagram.png) no-repeat;
+  width: 18px;
+  padding: 18px 5px 0 5px;
+}
